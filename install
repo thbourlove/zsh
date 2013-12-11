@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+/usr/bin/env git clone git://github.com/thbourlove/zsh.git $HOME/.zsh
+cd $HOME/.zsh
+git submodule update --init
+ln -s $HOME/.zsh/zshrc $HOME/.zshrc
