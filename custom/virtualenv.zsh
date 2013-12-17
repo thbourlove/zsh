@@ -14,7 +14,7 @@ function autoenv_virtualenv() {
     typeset venv
     venv="$1"
     if [[ "${VIRTUAL_ENV:t}" != "$venv" ]]; then
-        verify virtualenvwrapper installed
+        # verify virtualenvwrapper installed
         if which virtualenvwrapper.sh 1>/dev/null; then
             source virtualenvwrapper.sh
         else

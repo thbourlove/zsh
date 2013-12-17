@@ -1,6 +1,5 @@
 #alias
 export PYTHONPATH=/usr/local/lib/python2.7
-source /usr/local/bin/activate.sh
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
