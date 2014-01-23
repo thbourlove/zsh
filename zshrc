@@ -25,6 +25,8 @@ plugins=(
     rvm
     vagrant
     fabric
+    pear
+    pecl
 )
 
 source $ZSH/oh-my-zsh.sh
