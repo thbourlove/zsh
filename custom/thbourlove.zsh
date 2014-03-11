@@ -1,5 +1,5 @@
 #alias
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PYTHONPATH=/usr/local/lib/python2.7
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -37,4 +37,13 @@ function man() {
         LESS_TERMCAP_ue=$(printf "\e[0m") \
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
             man "$@"
+}
+
+function cd() {
+    if builtin cd "$@"; then
+        autoenv_init
+        return 0
+    else
+        return $?
+    fi
 }
