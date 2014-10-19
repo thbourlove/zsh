@@ -1,5 +1,6 @@
 #alias
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export GOPATH=$HOME/go
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$GOPATH/bin
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

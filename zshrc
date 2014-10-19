@@ -6,27 +6,28 @@ ZSH_CUSTOM=$HOME/.zsh/custom
 
 plugins=(
     autojump
-    brew
     bower
     encode64
     gem
     git
     github
-    osx
     vi-mode
     colored-man
     copydir
     composer
     extract
     web-search
-    heroku
-    npm
     pip
     rvm
     vagrant
     fabric
     pear
     pecl
+    laravel4
+    golang
+    go
+    docker
+    jekyll
 )
 
 source $ZSH/oh-my-zsh.sh
